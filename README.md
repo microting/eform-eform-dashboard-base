@@ -1,6 +1,6 @@
 # eform-eform-dashboard
 Build status
-[![Build Status](https://travis-ci.com/github/microting/eform-eform-dashboard-base.svg?branch=master)](https://travis-ci.com/github/microting/eform-eform-dashboard-base)
+[![Build Status](https://travis-ci.com/microting/eform-eform-dashboard-base.svg?branch=master)](https://travis-ci.com/microting/eform-eform-dashboard-base)
 
 ## NOTICE! this is not a standalone project and needs to be used with eForm Angular Frontend.
 
