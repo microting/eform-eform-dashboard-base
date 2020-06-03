@@ -18,18 +18,10 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 */
 
-
-using NUnit.Framework;
-
-namespace Microting.eFormeDashboardBase.Unit.Tests
+namespace Microting.eFormDashboardBase
 {
-    [TestFixture]
-    public class CanaryInAColeMine
+    public class DbConfig
     {
-        [Test]
-        public void CanPeep()
-        {
-            Assert.True(true);
-        }
+        public static bool IsMySQL = false;
     }
 }

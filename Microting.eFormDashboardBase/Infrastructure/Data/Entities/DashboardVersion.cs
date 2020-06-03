@@ -18,18 +18,23 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 */
 
+using System;
+using System.ComponentModel.DataAnnotations;
+using Microting.eFormApi.BasePn.Infrastructure.Database.Base;
 
-using NUnit.Framework;
-
-namespace Microting.eFormeDashboardBase.Unit.Tests
+namespace Microting.eFormDashboardBase.Infrastructure.Data.Entities
 {
-    [TestFixture]
-    public class CanaryInAColeMine
+    public class DashboardVersion : BaseEntity
     {
-        [Test]
-        public void CanPeep()
-        {
-            Assert.True(true);
-        }
+        [StringLength(250)]
+        public string Name { get; set; }
+        public int eFormId { get; set; }
+        public int? LocationId { get; set; } // Site id
+        public int? TagId { get; set; } // Tag id
+        public DateTime? DateFrom { get; set; }
+        public DateTime? DateTo { get; set; }
+        public bool Today { get; set; }
+        public int DashboardId { get; set; }
+        public virtual Dashboard Dashboard { get; set; }
     }
 }
