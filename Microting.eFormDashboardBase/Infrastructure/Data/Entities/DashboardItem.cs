@@ -19,6 +19,7 @@ SOFTWARE.
 */
 
 using System;
+using System.Collections.Generic;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 using Microting.eForm.Infrastructure.Constants;
@@ -40,25 +41,17 @@ namespace Microting.eFormDashboardBase.Infrastructure.Data.Entities
         public int DashboardId { get; set; }
         public virtual Dashboard Dashboard { get; set; }
 
-        public async Task Save(eFormDashboardPnDbContext dbContext)
+        public virtual List<DashboardItemCompare> CompareLocationsTags { get; set; }
+            = new List<DashboardItemCompare>();
+
+        public async Task Create(eFormDashboardPnDbContext dbContext)
         {
             var dashboardItem = new DashboardItem
             {
                 CreatedAt = DateTime.UtcNow,
                 UpdatedAt = DateTime.UtcNow,
                 Version = 1,
-                WorkflowState = Constants.WorkflowStates.Created,
-                UpdatedByUserId = UpdatedByUserId,
-                CreatedByUserId = CreatedByUserId,
-                DashboardId = DashboardId,
-                Position = Position,
-                ChartType = ChartType,
-                FieldId = FieldId,
-                FilterFieldId = FilterFieldId,
-                FilterFieldOptionId = FilterFieldOptionId,
-                Period = Period,
-                CalculateAverage = CalculateAverage,
-                CompareEnabled = CompareEnabled,
+                WorkflowState = Constants.WorkflowStates.Created
             };
 
             await dbContext.DashboardItems.AddAsync(dashboardItem);
