@@ -1,4 +1,4 @@
-﻿﻿namespace Microting.InsightDashboardBase.Infrastructure.Enums
+﻿﻿namespace Microting.eFormDashboardBase.Infrastructure.Enums
 {
     public enum DashboardPeriodUnits
     {

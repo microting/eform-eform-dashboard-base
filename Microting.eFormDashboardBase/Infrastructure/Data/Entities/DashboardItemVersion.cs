@@ -19,7 +19,7 @@ SOFTWARE.
 */
 
 using Microting.eFormApi.BasePn.Infrastructure.Database.Base;
-using Microting.InsightDashboardBase.Infrastructure.Enums;
+using Microting.eFormDashboardBase.Infrastructure.Enums;
 
 namespace Microting.eFormDashboardBase.Infrastructure.Data.Entities
 {
