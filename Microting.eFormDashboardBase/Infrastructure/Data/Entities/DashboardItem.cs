@@ -46,26 +46,21 @@ namespace Microting.eFormDashboardBase.Infrastructure.Data.Entities
 
         public async Task Create(eFormDashboardPnDbContext dbContext)
         {
-            var dashboardItem = new DashboardItem
-            {
-                CreatedAt = DateTime.UtcNow,
-                UpdatedAt = DateTime.UtcNow,
-                Version = 1,
-                WorkflowState = Constants.WorkflowStates.Created
-            };
+            CreatedAt = DateTime.UtcNow;
+            UpdatedAt = DateTime.UtcNow;
+            Version = 1;
+            WorkflowState = Constants.WorkflowStates.Created;
 
-            await dbContext.DashboardItems.AddAsync(dashboardItem);
-            await dbContext.SaveChangesAsync();
+            await dbContext.DashboardItems.AddAsync(this).ConfigureAwait(false);
+            await dbContext.SaveChangesAsync().ConfigureAwait(false);
 
-            await dbContext.DashboardItemVersions.AddAsync(MapVersion(dashboardItem));
-            await dbContext.SaveChangesAsync();
-
-            Id = dashboardItem.Id;
+            await dbContext.DashboardItemVersions.AddAsync(MapVersion(this)).ConfigureAwait(false);
+            await dbContext.SaveChangesAsync().ConfigureAwait(false);
         }
 
         public async Task Update(eFormDashboardPnDbContext dbContext)
         {
-            DashboardItem dashboardItem = await dbContext.DashboardItems.FirstOrDefaultAsync(x => x.Id == Id);
+            DashboardItem dashboardItem = await dbContext.DashboardItems.FirstOrDefaultAsync(x => x.Id == Id).ConfigureAwait(false);
 
             if (dashboardItem == null)
             {
@@ -89,14 +84,14 @@ namespace Microting.eFormDashboardBase.Infrastructure.Data.Entities
                 dashboardItem.UpdatedAt = DateTime.UtcNow;
                 dashboardItem.Version += 1;
 
-                dbContext.DashboardItemVersions.Add(MapVersion(dashboardItem));
-                await dbContext.SaveChangesAsync();
+                await dbContext.DashboardItemVersions.AddAsync(MapVersion(dashboardItem)).ConfigureAwait(false);
+                await dbContext.SaveChangesAsync().ConfigureAwait(false);
             }
         }
 
         public async Task Delete(eFormDashboardPnDbContext dbContext)
         {
-            DashboardItem dashboardItem = await dbContext.DashboardItems.FirstOrDefaultAsync(x => x.Id == Id);
+            DashboardItem dashboardItem = await dbContext.DashboardItems.FirstOrDefaultAsync(x => x.Id == Id).ConfigureAwait(false);
 
             if (dashboardItem == null)
             {
@@ -110,8 +105,8 @@ namespace Microting.eFormDashboardBase.Infrastructure.Data.Entities
                 dashboardItem.UpdatedAt = DateTime.UtcNow;
                 dashboardItem.Version += 1;
 
-                dbContext.DashboardItemVersions.Add(MapVersion(dashboardItem));
-                await dbContext.SaveChangesAsync();
+                await dbContext.DashboardItemVersions.AddAsync(MapVersion(dashboardItem)).ConfigureAwait(false);
+                await dbContext.SaveChangesAsync().ConfigureAwait(false);
             }
         }
 

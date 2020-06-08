@@ -39,6 +39,8 @@ namespace Microting.eFormDashboardBase.Infrastructure.Data
         public DbSet<DashboardItemVersion> DashboardItemVersions { get; set; }
         public DbSet<DashboardItemCompare> DashboardItemCompares { get; set; }
         public DbSet<DashboardItemCompareVersion> DashboardItemCompareVersions { get; set; }
+        public DbSet<DashboardItemIgnoredFieldValue> DashboardItemIgnoredFieldValues { get; set; }
+        public DbSet<DashboardItemIgnoredFieldValueVersion> DashboardItemIgnoredFieldValueVersions { get; set; }
         public DbSet<PluginConfigurationValue> PluginConfigurationValues { get; set; }
         public DbSet<PluginConfigurationValueVersion> PluginConfigurationValueVersions { get; set; }
         public DbSet<PluginPermission> PluginPermissions { get; set; }

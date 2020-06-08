@@ -40,25 +40,22 @@ namespace Microting.eFormDashboardBase.Infrastructure.Data.Entities
 
         public async Task Create(eFormDashboardPnDbContext dbContext)
         {
-            var dashboardItemCompare = new DashboardItemCompare
-            {
-                CreatedAt = DateTime.UtcNow,
-                UpdatedAt = DateTime.UtcNow,
-                Version = 1,
-                WorkflowState = Constants.WorkflowStates.Created
-            };
+            CreatedAt = DateTime.UtcNow;
+            UpdatedAt = DateTime.UtcNow;
+            Version = 1;
+            WorkflowState = Constants.WorkflowStates.Created;
 
-            await dbContext.DashboardItemCompares.AddAsync(dashboardItemCompare);
-            await dbContext.DashboardItemCompareVersions.AddAsync(MapVersion(dashboardItemCompare));
-            await dbContext.SaveChangesAsync();
+            await dbContext.DashboardItemCompares.AddAsync(this).ConfigureAwait(false);
+            await dbContext.SaveChangesAsync().ConfigureAwait(false);
 
-            Id = dashboardItemCompare.Id;
+            await dbContext.DashboardItemCompareVersions.AddAsync(MapVersion(this)).ConfigureAwait(false);
+            await dbContext.SaveChangesAsync().ConfigureAwait(false);
         }
 
         public async Task Update(eFormDashboardPnDbContext dbContext)
         {
             var dashboardItemCompare = await dbContext.DashboardItemCompares
-                .FirstOrDefaultAsync(x => x.Id == Id);
+                .FirstOrDefaultAsync(x => x.Id == Id).ConfigureAwait(false);
 
             if (dashboardItemCompare == null)
             {
@@ -75,15 +72,15 @@ namespace Microting.eFormDashboardBase.Infrastructure.Data.Entities
                 dashboardItemCompare.UpdatedAt = DateTime.UtcNow;
                 dashboardItemCompare.Version += 1;
 
-                dbContext.DashboardItemCompareVersions.Add(MapVersion(dashboardItemCompare));
-                await dbContext.SaveChangesAsync();
+                await dbContext.DashboardItemCompareVersions.AddAsync(MapVersion(dashboardItemCompare)).ConfigureAwait(false);
+                await dbContext.SaveChangesAsync().ConfigureAwait(false);
             }
         }
 
         public async Task Delete(eFormDashboardPnDbContext dbContext)
         {
             var dashboardItemCompare = await dbContext.DashboardItemCompares
-                .FirstOrDefaultAsync(x => x.Id == Id);
+                .FirstOrDefaultAsync(x => x.Id == Id).ConfigureAwait(false);
 
             if (dashboardItemCompare == null)
             {
@@ -97,8 +94,8 @@ namespace Microting.eFormDashboardBase.Infrastructure.Data.Entities
                 dashboardItemCompare.UpdatedAt = DateTime.UtcNow;
                 dashboardItemCompare.Version += 1;
 
-                dbContext.DashboardItemCompareVersions.Add(MapVersion(dashboardItemCompare));
-                await dbContext.SaveChangesAsync();
+                await dbContext.DashboardItemCompareVersions.AddAsync(MapVersion(dashboardItemCompare)).ConfigureAwait(false);
+                await dbContext.SaveChangesAsync().ConfigureAwait(false);
             }
         }
 
