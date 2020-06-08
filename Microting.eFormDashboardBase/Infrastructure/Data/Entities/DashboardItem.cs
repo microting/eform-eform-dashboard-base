@@ -44,6 +44,9 @@ namespace Microting.eFormDashboardBase.Infrastructure.Data.Entities
         public virtual List<DashboardItemCompare> CompareLocationsTags { get; set; }
             = new List<DashboardItemCompare>();
 
+        public virtual List<DashboardItemIgnoredFieldValue> IgnoredFieldValues { get; set; }
+            = new List<DashboardItemIgnoredFieldValue>();
+
         public async Task Create(eFormDashboardPnDbContext dbContext)
         {
             CreatedAt = DateTime.UtcNow;
