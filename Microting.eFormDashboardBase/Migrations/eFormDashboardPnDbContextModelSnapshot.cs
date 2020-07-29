@@ -2,7 +2,6 @@
 using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
-using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Microting.eFormDashboardBase.Infrastructure.Data;
 
@@ -14,39 +13,39 @@ namespace Microting.eFormDashboardBase.Migrations
         protected override void BuildModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
-            string autoIDGenStrategy = "SqlServer:ValueGenerationStrategy";
-            object autoIDGenStrategyValue = SqlServerValueGenerationStrategy.IdentityColumn;
-            if (DbConfig.IsMySQL)
-            {
-                autoIDGenStrategy = "MySql:ValueGenerationStrategy";
-                autoIDGenStrategyValue = MySqlValueGenerationStrategy.IdentityColumn;
-            }
             modelBuilder
-                .HasAnnotation("ProductVersion", "2.2.6-servicing-10079")
-                .HasAnnotation("Relational:MaxIdentifierLength", 128)
-                .HasAnnotation(autoIDGenStrategy, autoIDGenStrategyValue);
+                .HasAnnotation("ProductVersion", "3.1.6")
+                .HasAnnotation("Relational:MaxIdentifierLength", 64);
 
             modelBuilder.Entity("Microting.eFormApi.BasePn.Infrastructure.Database.Entities.PluginConfigurationValue", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasAnnotation(autoIDGenStrategy, autoIDGenStrategyValue);
+                        .HasColumnType("int");
 
-                    b.Property<DateTime>("CreatedAt");
+                    b.Property<DateTime>("CreatedAt")
+                        .HasColumnType("datetime(6)");
 
-                    b.Property<int>("CreatedByUserId");
+                    b.Property<int>("CreatedByUserId")
+                        .HasColumnType("int");
 
-                    b.Property<string>("Name");
+                    b.Property<string>("Name")
+                        .HasColumnType("longtext CHARACTER SET utf8mb4");
 
-                    b.Property<DateTime?>("UpdatedAt");
+                    b.Property<DateTime?>("UpdatedAt")
+                        .HasColumnType("datetime(6)");
 
-                    b.Property<int>("UpdatedByUserId");
+                    b.Property<int>("UpdatedByUserId")
+                        .HasColumnType("int");
 
-                    b.Property<string>("Value");
+                    b.Property<string>("Value")
+                        .HasColumnType("longtext CHARACTER SET utf8mb4");
 
-                    b.Property<int>("Version");
+                    b.Property<int>("Version")
+                        .HasColumnType("int");
 
                     b.Property<string>("WorkflowState")
+                        .HasColumnType("varchar(255) CHARACTER SET utf8mb4")
                         .HasMaxLength(255);
 
                     b.HasKey("Id");
@@ -58,23 +57,31 @@ namespace Microting.eFormDashboardBase.Migrations
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasAnnotation(autoIDGenStrategy, autoIDGenStrategyValue);
+                        .HasColumnType("int");
 
-                    b.Property<DateTime>("CreatedAt");
+                    b.Property<DateTime>("CreatedAt")
+                        .HasColumnType("datetime(6)");
 
-                    b.Property<int>("CreatedByUserId");
+                    b.Property<int>("CreatedByUserId")
+                        .HasColumnType("int");
 
-                    b.Property<string>("Name");
+                    b.Property<string>("Name")
+                        .HasColumnType("longtext CHARACTER SET utf8mb4");
 
-                    b.Property<DateTime?>("UpdatedAt");
+                    b.Property<DateTime?>("UpdatedAt")
+                        .HasColumnType("datetime(6)");
 
-                    b.Property<int>("UpdatedByUserId");
+                    b.Property<int>("UpdatedByUserId")
+                        .HasColumnType("int");
 
-                    b.Property<string>("Value");
+                    b.Property<string>("Value")
+                        .HasColumnType("longtext CHARACTER SET utf8mb4");
 
-                    b.Property<int>("Version");
+                    b.Property<int>("Version")
+                        .HasColumnType("int");
 
                     b.Property<string>("WorkflowState")
+                        .HasColumnType("varchar(255) CHARACTER SET utf8mb4")
                         .HasMaxLength(255);
 
                     b.HasKey("Id");
@@ -86,25 +93,34 @@ namespace Microting.eFormDashboardBase.Migrations
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasAnnotation(autoIDGenStrategy, autoIDGenStrategyValue);
+                        .HasColumnType("int");
 
-                    b.Property<DateTime>("CreatedAt");
+                    b.Property<DateTime>("CreatedAt")
+                        .HasColumnType("datetime(6)");
 
-                    b.Property<int>("CreatedByUserId");
+                    b.Property<int>("CreatedByUserId")
+                        .HasColumnType("int");
 
-                    b.Property<int>("GroupId");
+                    b.Property<int>("GroupId")
+                        .HasColumnType("int");
 
-                    b.Property<bool>("IsEnabled");
+                    b.Property<bool>("IsEnabled")
+                        .HasColumnType("tinyint(1)");
 
-                    b.Property<int>("PermissionId");
+                    b.Property<int>("PermissionId")
+                        .HasColumnType("int");
 
-                    b.Property<DateTime?>("UpdatedAt");
+                    b.Property<DateTime?>("UpdatedAt")
+                        .HasColumnType("datetime(6)");
 
-                    b.Property<int>("UpdatedByUserId");
+                    b.Property<int>("UpdatedByUserId")
+                        .HasColumnType("int");
 
-                    b.Property<int>("Version");
+                    b.Property<int>("Version")
+                        .HasColumnType("int");
 
                     b.Property<string>("WorkflowState")
+                        .HasColumnType("varchar(255) CHARACTER SET utf8mb4")
                         .HasMaxLength(255);
 
                     b.HasKey("Id");
@@ -118,34 +134,40 @@ namespace Microting.eFormDashboardBase.Migrations
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasAnnotation(autoIDGenStrategy, autoIDGenStrategyValue);
+                        .HasColumnType("int");
 
-                    b.Property<DateTime>("CreatedAt");
+                    b.Property<DateTime>("CreatedAt")
+                        .HasColumnType("datetime(6)");
 
-                    b.Property<int>("CreatedByUserId");
+                    b.Property<int>("CreatedByUserId")
+                        .HasColumnType("int");
 
-                    b.Property<int>("GroupId");
+                    b.Property<int>("GroupId")
+                        .HasColumnType("int");
 
-                    b.Property<bool>("IsEnabled");
+                    b.Property<bool>("IsEnabled")
+                        .HasColumnType("tinyint(1)");
 
-                    b.Property<int>("PermissionId");
+                    b.Property<int>("PermissionId")
+                        .HasColumnType("int");
 
-                    b.Property<int>("PluginGroupPermissionId");
+                    b.Property<int>("PluginGroupPermissionId")
+                        .HasColumnType("int");
 
-                    b.Property<DateTime?>("UpdatedAt");
+                    b.Property<DateTime?>("UpdatedAt")
+                        .HasColumnType("datetime(6)");
 
-                    b.Property<int>("UpdatedByUserId");
+                    b.Property<int>("UpdatedByUserId")
+                        .HasColumnType("int");
 
-                    b.Property<int>("Version");
+                    b.Property<int>("Version")
+                        .HasColumnType("int");
 
                     b.Property<string>("WorkflowState")
+                        .HasColumnType("varchar(255) CHARACTER SET utf8mb4")
                         .HasMaxLength(255);
 
                     b.HasKey("Id");
-
-                    b.HasIndex("PermissionId");
-
-                    b.HasIndex("PluginGroupPermissionId");
 
                     b.ToTable("PluginGroupPermissionVersions");
                 });
@@ -154,23 +176,31 @@ namespace Microting.eFormDashboardBase.Migrations
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasAnnotation(autoIDGenStrategy, autoIDGenStrategyValue);
+                        .HasColumnType("int");
 
-                    b.Property<string>("ClaimName");
+                    b.Property<string>("ClaimName")
+                        .HasColumnType("longtext CHARACTER SET utf8mb4");
 
-                    b.Property<DateTime>("CreatedAt");
+                    b.Property<DateTime>("CreatedAt")
+                        .HasColumnType("datetime(6)");
 
-                    b.Property<int>("CreatedByUserId");
+                    b.Property<int>("CreatedByUserId")
+                        .HasColumnType("int");
 
-                    b.Property<string>("PermissionName");
+                    b.Property<string>("PermissionName")
+                        .HasColumnType("longtext CHARACTER SET utf8mb4");
 
-                    b.Property<DateTime?>("UpdatedAt");
+                    b.Property<DateTime?>("UpdatedAt")
+                        .HasColumnType("datetime(6)");
 
-                    b.Property<int>("UpdatedByUserId");
+                    b.Property<int>("UpdatedByUserId")
+                        .HasColumnType("int");
 
-                    b.Property<int>("Version");
+                    b.Property<int>("Version")
+                        .HasColumnType("int");
 
                     b.Property<string>("WorkflowState")
+                        .HasColumnType("varchar(255) CHARACTER SET utf8mb4")
                         .HasMaxLength(255);
 
                     b.HasKey("Id");
@@ -182,35 +212,48 @@ namespace Microting.eFormDashboardBase.Migrations
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasAnnotation(autoIDGenStrategy, autoIDGenStrategyValue);
+                        .HasColumnType("int");
 
-                    b.Property<DateTime>("CreatedAt");
+                    b.Property<DateTime>("CreatedAt")
+                        .HasColumnType("datetime(6)");
 
-                    b.Property<int>("CreatedByUserId");
+                    b.Property<int>("CreatedByUserId")
+                        .HasColumnType("int");
 
-                    b.Property<DateTime?>("DateFrom");
+                    b.Property<DateTime?>("DateFrom")
+                        .HasColumnType("datetime(6)");
 
-                    b.Property<DateTime?>("DateTo");
+                    b.Property<DateTime?>("DateTo")
+                        .HasColumnType("datetime(6)");
 
-                    b.Property<int?>("LocationId");
+                    b.Property<int?>("LocationId")
+                        .HasColumnType("int");
 
                     b.Property<string>("Name")
+                        .HasColumnType("varchar(250) CHARACTER SET utf8mb4")
                         .HasMaxLength(250);
 
-                    b.Property<int?>("TagId");
+                    b.Property<int?>("TagId")
+                        .HasColumnType("int");
 
-                    b.Property<bool>("Today");
+                    b.Property<bool>("Today")
+                        .HasColumnType("tinyint(1)");
 
-                    b.Property<DateTime?>("UpdatedAt");
+                    b.Property<DateTime?>("UpdatedAt")
+                        .HasColumnType("datetime(6)");
 
-                    b.Property<int>("UpdatedByUserId");
+                    b.Property<int>("UpdatedByUserId")
+                        .HasColumnType("int");
 
-                    b.Property<int>("Version");
+                    b.Property<int>("Version")
+                        .HasColumnType("int");
 
                     b.Property<string>("WorkflowState")
+                        .HasColumnType("varchar(255) CHARACTER SET utf8mb4")
                         .HasMaxLength(255);
 
-                    b.Property<int>("eFormId");
+                    b.Property<int>("eFormId")
+                        .HasColumnType("int");
 
                     b.HasKey("Id");
 
@@ -221,37 +264,52 @@ namespace Microting.eFormDashboardBase.Migrations
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasAnnotation(autoIDGenStrategy, autoIDGenStrategyValue);
+                        .HasColumnType("int");
 
-                    b.Property<bool>("CalculateAverage");
+                    b.Property<bool>("CalculateAverage")
+                        .HasColumnType("tinyint(1)");
 
-                    b.Property<int>("ChartType");
+                    b.Property<int>("ChartType")
+                        .HasColumnType("int");
 
-                    b.Property<bool>("CompareEnabled");
+                    b.Property<bool>("CompareEnabled")
+                        .HasColumnType("tinyint(1)");
 
-                    b.Property<DateTime>("CreatedAt");
+                    b.Property<DateTime>("CreatedAt")
+                        .HasColumnType("datetime(6)");
 
-                    b.Property<int>("CreatedByUserId");
+                    b.Property<int>("CreatedByUserId")
+                        .HasColumnType("int");
 
-                    b.Property<int>("DashboardId");
+                    b.Property<int>("DashboardId")
+                        .HasColumnType("int");
 
-                    b.Property<int>("FieldId");
+                    b.Property<int>("FieldId")
+                        .HasColumnType("int");
 
-                    b.Property<int?>("FilterFieldId");
+                    b.Property<int?>("FilterFieldId")
+                        .HasColumnType("int");
 
-                    b.Property<int?>("FilterFieldOptionId");
+                    b.Property<int?>("FilterFieldOptionId")
+                        .HasColumnType("int");
 
-                    b.Property<int>("Period");
+                    b.Property<int>("Period")
+                        .HasColumnType("int");
 
-                    b.Property<int>("Position");
+                    b.Property<int>("Position")
+                        .HasColumnType("int");
 
-                    b.Property<DateTime?>("UpdatedAt");
+                    b.Property<DateTime?>("UpdatedAt")
+                        .HasColumnType("datetime(6)");
 
-                    b.Property<int>("UpdatedByUserId");
+                    b.Property<int>("UpdatedByUserId")
+                        .HasColumnType("int");
 
-                    b.Property<int>("Version");
+                    b.Property<int>("Version")
+                        .HasColumnType("int");
 
                     b.Property<string>("WorkflowState")
+                        .HasColumnType("varchar(255) CHARACTER SET utf8mb4")
                         .HasMaxLength(255);
 
                     b.HasKey("Id");
@@ -265,27 +323,37 @@ namespace Microting.eFormDashboardBase.Migrations
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasAnnotation(autoIDGenStrategy, autoIDGenStrategyValue);
+                        .HasColumnType("int");
 
-                    b.Property<DateTime>("CreatedAt");
+                    b.Property<DateTime>("CreatedAt")
+                        .HasColumnType("datetime(6)");
 
-                    b.Property<int>("CreatedByUserId");
+                    b.Property<int>("CreatedByUserId")
+                        .HasColumnType("int");
 
-                    b.Property<int>("DashboardItemId");
+                    b.Property<int>("DashboardItemId")
+                        .HasColumnType("int");
 
-                    b.Property<int?>("LocationId");
+                    b.Property<int?>("LocationId")
+                        .HasColumnType("int");
 
-                    b.Property<int>("Position");
+                    b.Property<int>("Position")
+                        .HasColumnType("int");
 
-                    b.Property<int?>("TagId");
+                    b.Property<int?>("TagId")
+                        .HasColumnType("int");
 
-                    b.Property<DateTime?>("UpdatedAt");
+                    b.Property<DateTime?>("UpdatedAt")
+                        .HasColumnType("datetime(6)");
 
-                    b.Property<int>("UpdatedByUserId");
+                    b.Property<int>("UpdatedByUserId")
+                        .HasColumnType("int");
 
-                    b.Property<int>("Version");
+                    b.Property<int>("Version")
+                        .HasColumnType("int");
 
                     b.Property<string>("WorkflowState")
+                        .HasColumnType("varchar(255) CHARACTER SET utf8mb4")
                         .HasMaxLength(255);
 
                     b.HasKey("Id");
@@ -299,29 +367,40 @@ namespace Microting.eFormDashboardBase.Migrations
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasAnnotation(autoIDGenStrategy, autoIDGenStrategyValue);
+                        .HasColumnType("int");
 
-                    b.Property<DateTime>("CreatedAt");
+                    b.Property<DateTime>("CreatedAt")
+                        .HasColumnType("datetime(6)");
 
-                    b.Property<int>("CreatedByUserId");
+                    b.Property<int>("CreatedByUserId")
+                        .HasColumnType("int");
 
-                    b.Property<int>("DashboardItemCompareId");
+                    b.Property<int>("DashboardItemCompareId")
+                        .HasColumnType("int");
 
-                    b.Property<int>("DashboardItemId");
+                    b.Property<int>("DashboardItemId")
+                        .HasColumnType("int");
 
-                    b.Property<int?>("LocationId");
+                    b.Property<int?>("LocationId")
+                        .HasColumnType("int");
 
-                    b.Property<int>("Position");
+                    b.Property<int>("Position")
+                        .HasColumnType("int");
 
-                    b.Property<int?>("TagId");
+                    b.Property<int?>("TagId")
+                        .HasColumnType("int");
 
-                    b.Property<DateTime?>("UpdatedAt");
+                    b.Property<DateTime?>("UpdatedAt")
+                        .HasColumnType("datetime(6)");
 
-                    b.Property<int>("UpdatedByUserId");
+                    b.Property<int>("UpdatedByUserId")
+                        .HasColumnType("int");
 
-                    b.Property<int>("Version");
+                    b.Property<int>("Version")
+                        .HasColumnType("int");
 
                     b.Property<string>("WorkflowState")
+                        .HasColumnType("varchar(255) CHARACTER SET utf8mb4")
                         .HasMaxLength(255);
 
                     b.HasKey("Id");
@@ -333,25 +412,34 @@ namespace Microting.eFormDashboardBase.Migrations
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasAnnotation(autoIDGenStrategy, autoIDGenStrategyValue);
+                        .HasColumnType("int");
 
-                    b.Property<DateTime>("CreatedAt");
+                    b.Property<DateTime>("CreatedAt")
+                        .HasColumnType("datetime(6)");
 
-                    b.Property<int>("CreatedByUserId");
+                    b.Property<int>("CreatedByUserId")
+                        .HasColumnType("int");
 
-                    b.Property<int>("DashboardItemId");
+                    b.Property<int>("DashboardItemId")
+                        .HasColumnType("int");
 
-                    b.Property<int>("FieldOptionId");
+                    b.Property<int>("FieldOptionId")
+                        .HasColumnType("int");
 
-                    b.Property<string>("FieldValue");
+                    b.Property<string>("FieldValue")
+                        .HasColumnType("longtext CHARACTER SET utf8mb4");
 
-                    b.Property<DateTime?>("UpdatedAt");
+                    b.Property<DateTime?>("UpdatedAt")
+                        .HasColumnType("datetime(6)");
 
-                    b.Property<int>("UpdatedByUserId");
+                    b.Property<int>("UpdatedByUserId")
+                        .HasColumnType("int");
 
-                    b.Property<int>("Version");
+                    b.Property<int>("Version")
+                        .HasColumnType("int");
 
                     b.Property<string>("WorkflowState")
+                        .HasColumnType("varchar(255) CHARACTER SET utf8mb4")
                         .HasMaxLength(255);
 
                     b.HasKey("Id");
@@ -365,27 +453,37 @@ namespace Microting.eFormDashboardBase.Migrations
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasAnnotation(autoIDGenStrategy, autoIDGenStrategyValue);
+                        .HasColumnType("int");
 
-                    b.Property<DateTime>("CreatedAt");
+                    b.Property<DateTime>("CreatedAt")
+                        .HasColumnType("datetime(6)");
 
-                    b.Property<int>("CreatedByUserId");
+                    b.Property<int>("CreatedByUserId")
+                        .HasColumnType("int");
 
-                    b.Property<int>("DashboardItemId");
+                    b.Property<int>("DashboardItemId")
+                        .HasColumnType("int");
 
-                    b.Property<int>("DashboardItemIgnoredFieldValueId");
+                    b.Property<int>("DashboardItemIgnoredFieldValueId")
+                        .HasColumnType("int");
 
-                    b.Property<int>("FieldOptionId");
+                    b.Property<int>("FieldOptionId")
+                        .HasColumnType("int");
 
-                    b.Property<string>("FieldValue");
+                    b.Property<string>("FieldValue")
+                        .HasColumnType("longtext CHARACTER SET utf8mb4");
 
-                    b.Property<DateTime?>("UpdatedAt");
+                    b.Property<DateTime?>("UpdatedAt")
+                        .HasColumnType("datetime(6)");
 
-                    b.Property<int>("UpdatedByUserId");
+                    b.Property<int>("UpdatedByUserId")
+                        .HasColumnType("int");
 
-                    b.Property<int>("Version");
+                    b.Property<int>("Version")
+                        .HasColumnType("int");
 
                     b.Property<string>("WorkflowState")
+                        .HasColumnType("varchar(255) CHARACTER SET utf8mb4")
                         .HasMaxLength(255);
 
                     b.HasKey("Id");
@@ -397,37 +495,52 @@ namespace Microting.eFormDashboardBase.Migrations
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasAnnotation(autoIDGenStrategy, autoIDGenStrategyValue);
+                        .HasColumnType("int");
 
-                    b.Property<bool>("CalculateAverage");
+                    b.Property<bool>("CalculateAverage")
+                        .HasColumnType("tinyint(1)");
 
-                    b.Property<int>("ChartType");
+                    b.Property<int>("ChartType")
+                        .HasColumnType("int");
 
-                    b.Property<bool>("CompareEnabled");
+                    b.Property<bool>("CompareEnabled")
+                        .HasColumnType("tinyint(1)");
 
-                    b.Property<DateTime>("CreatedAt");
+                    b.Property<DateTime>("CreatedAt")
+                        .HasColumnType("datetime(6)");
 
-                    b.Property<int>("CreatedByUserId");
+                    b.Property<int>("CreatedByUserId")
+                        .HasColumnType("int");
 
-                    b.Property<int>("DashboardItemId");
+                    b.Property<int>("DashboardItemId")
+                        .HasColumnType("int");
 
-                    b.Property<int>("FieldId");
+                    b.Property<int>("FieldId")
+                        .HasColumnType("int");
 
-                    b.Property<int?>("FilterFieldId");
+                    b.Property<int?>("FilterFieldId")
+                        .HasColumnType("int");
 
-                    b.Property<int?>("FilterFieldOptionId");
+                    b.Property<int?>("FilterFieldOptionId")
+                        .HasColumnType("int");
 
-                    b.Property<int>("Period");
+                    b.Property<int>("Period")
+                        .HasColumnType("int");
 
-                    b.Property<int>("Position");
+                    b.Property<int>("Position")
+                        .HasColumnType("int");
 
-                    b.Property<DateTime?>("UpdatedAt");
+                    b.Property<DateTime?>("UpdatedAt")
+                        .HasColumnType("datetime(6)");
 
-                    b.Property<int>("UpdatedByUserId");
+                    b.Property<int>("UpdatedByUserId")
+                        .HasColumnType("int");
 
-                    b.Property<int>("Version");
+                    b.Property<int>("Version")
+                        .HasColumnType("int");
 
                     b.Property<string>("WorkflowState")
+                        .HasColumnType("varchar(255) CHARACTER SET utf8mb4")
                         .HasMaxLength(255);
 
                     b.HasKey("Id");
@@ -441,37 +554,51 @@ namespace Microting.eFormDashboardBase.Migrations
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasAnnotation(autoIDGenStrategy, autoIDGenStrategyValue);
+                        .HasColumnType("int");
 
-                    b.Property<DateTime>("CreatedAt");
+                    b.Property<DateTime>("CreatedAt")
+                        .HasColumnType("datetime(6)");
 
-                    b.Property<int>("CreatedByUserId");
+                    b.Property<int>("CreatedByUserId")
+                        .HasColumnType("int");
 
-                    b.Property<int>("DashboardId");
+                    b.Property<int>("DashboardId")
+                        .HasColumnType("int");
 
-                    b.Property<DateTime?>("DateFrom");
+                    b.Property<DateTime?>("DateFrom")
+                        .HasColumnType("datetime(6)");
 
-                    b.Property<DateTime?>("DateTo");
+                    b.Property<DateTime?>("DateTo")
+                        .HasColumnType("datetime(6)");
 
-                    b.Property<int?>("LocationId");
+                    b.Property<int?>("LocationId")
+                        .HasColumnType("int");
 
                     b.Property<string>("Name")
+                        .HasColumnType("varchar(250) CHARACTER SET utf8mb4")
                         .HasMaxLength(250);
 
-                    b.Property<int?>("TagId");
+                    b.Property<int?>("TagId")
+                        .HasColumnType("int");
 
-                    b.Property<bool>("Today");
+                    b.Property<bool>("Today")
+                        .HasColumnType("tinyint(1)");
 
-                    b.Property<DateTime?>("UpdatedAt");
+                    b.Property<DateTime?>("UpdatedAt")
+                        .HasColumnType("datetime(6)");
 
-                    b.Property<int>("UpdatedByUserId");
+                    b.Property<int>("UpdatedByUserId")
+                        .HasColumnType("int");
 
-                    b.Property<int>("Version");
+                    b.Property<int>("Version")
+                        .HasColumnType("int");
 
                     b.Property<string>("WorkflowState")
+                        .HasColumnType("varchar(255) CHARACTER SET utf8mb4")
                         .HasMaxLength(255);
 
-                    b.Property<int>("eFormId");
+                    b.Property<int>("eFormId")
+                        .HasColumnType("int");
 
                     b.HasKey("Id");
 
@@ -485,20 +612,8 @@ namespace Microting.eFormDashboardBase.Migrations
                     b.HasOne("Microting.eFormApi.BasePn.Infrastructure.Database.Entities.PluginPermission", "Permission")
                         .WithMany()
                         .HasForeignKey("PermissionId")
-                        .OnDelete(DeleteBehavior.Cascade);
-                });
-
-            modelBuilder.Entity("Microting.eFormApi.BasePn.Infrastructure.Database.Entities.PluginGroupPermissionVersion", b =>
-                {
-                    b.HasOne("Microting.eFormApi.BasePn.Infrastructure.Database.Entities.PluginPermission", "Permission")
-                        .WithMany()
-                        .HasForeignKey("PermissionId")
-                        .OnDelete(DeleteBehavior.Cascade);
-
-                    b.HasOne("Microting.eFormApi.BasePn.Infrastructure.Database.Entities.PluginGroupPermission", "PluginGroupPermission")
-                        .WithMany()
-                        .HasForeignKey("PluginGroupPermissionId")
-                        .OnDelete(DeleteBehavior.Cascade);
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
                 });
 
             modelBuilder.Entity("Microting.eFormDashboardBase.Infrastructure.Data.Entities.DashboardItem", b =>
@@ -506,7 +621,8 @@ namespace Microting.eFormDashboardBase.Migrations
                     b.HasOne("Microting.eFormDashboardBase.Infrastructure.Data.Entities.Dashboard", "Dashboard")
                         .WithMany("DashboardItems")
                         .HasForeignKey("DashboardId")
-                        .OnDelete(DeleteBehavior.Cascade);
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
                 });
 
             modelBuilder.Entity("Microting.eFormDashboardBase.Infrastructure.Data.Entities.DashboardItemCompare", b =>
@@ -514,7 +630,8 @@ namespace Microting.eFormDashboardBase.Migrations
                     b.HasOne("Microting.eFormDashboardBase.Infrastructure.Data.Entities.DashboardItem", "DashboardItem")
                         .WithMany("CompareLocationsTags")
                         .HasForeignKey("DashboardItemId")
-                        .OnDelete(DeleteBehavior.Cascade);
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
                 });
 
             modelBuilder.Entity("Microting.eFormDashboardBase.Infrastructure.Data.Entities.DashboardItemIgnoredFieldValue", b =>
@@ -522,7 +639,8 @@ namespace Microting.eFormDashboardBase.Migrations
                     b.HasOne("Microting.eFormDashboardBase.Infrastructure.Data.Entities.DashboardItem", "DashboardItem")
                         .WithMany("IgnoredFieldValues")
                         .HasForeignKey("DashboardItemId")
-                        .OnDelete(DeleteBehavior.Cascade);
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
                 });
 
             modelBuilder.Entity("Microting.eFormDashboardBase.Infrastructure.Data.Entities.DashboardItemVersion", b =>
@@ -530,7 +648,8 @@ namespace Microting.eFormDashboardBase.Migrations
                     b.HasOne("Microting.eFormDashboardBase.Infrastructure.Data.Entities.DashboardItem", "DashboardItem")
                         .WithMany()
                         .HasForeignKey("DashboardItemId")
-                        .OnDelete(DeleteBehavior.Cascade);
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
                 });
 
             modelBuilder.Entity("Microting.eFormDashboardBase.Infrastructure.Data.Entities.DashboardVersion", b =>
@@ -538,7 +657,8 @@ namespace Microting.eFormDashboardBase.Migrations
                     b.HasOne("Microting.eFormDashboardBase.Infrastructure.Data.Entities.Dashboard", "Dashboard")
                         .WithMany()
                         .HasForeignKey("DashboardId")
-                        .OnDelete(DeleteBehavior.Cascade);
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
                 });
 #pragma warning restore 612, 618
         }
