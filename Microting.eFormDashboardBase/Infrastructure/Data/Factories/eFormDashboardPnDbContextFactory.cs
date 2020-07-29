@@ -22,6 +22,7 @@ using System;
 using System.Linq;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Design;
+using Pomelo.EntityFrameworkCore.MySql.Infrastructure;
 
 namespace Microting.eFormDashboardBase.Infrastructure.Data.Factories
 {
@@ -29,27 +30,16 @@ namespace Microting.eFormDashboardBase.Infrastructure.Data.Factories
     {
         public eFormDashboardPnDbContext CreateDbContext(string[] args)
         {
-            //args = new[] { "Data Source=.\\SQLEXPRESS;Database=insight-dashboard-pl;Integrated Security=True" };
+            var defaultCs = "Server = localhost; port = 3306; Database = eform-dashboard-pn; user = root; Convert Zero Datetime = true;";
             var optionsBuilder = new DbContextOptionsBuilder<eFormDashboardPnDbContext>();
-            if (args.Any())
+            optionsBuilder.UseMySql(args.Any() ? args[0] : defaultCs, mysqlOptions =>
             {
-                if (args.FirstOrDefault().ToLower().Contains("convert zero datetime"))
-                {
-                    optionsBuilder.UseMySql(args.FirstOrDefault());
-                }
-                else
-                {
-                    optionsBuilder.UseSqlServer(args.FirstOrDefault());
-                }
-            }
-            else
-            {
-                throw new ArgumentNullException("Connection string not present");
-            }
-            //optionsBuilder.UseSqlServer(@"data source=(LocalDb)\SharedInstance;Initial catalog=insight-dashboard-base-tests;Integrated Security=True");
-            //dotnet ef migrations add InitialCreate --project Microting.eFormDashboardBase --startup-project DBMigrator
+                mysqlOptions.ServerVersion(new Version(10, 4, 0), ServerType.MariaDb);
+            });
             optionsBuilder.UseLazyLoadingProxies(true);
+
             return new eFormDashboardPnDbContext(optionsBuilder.Options);
+            //dotnet ef migrations add InitialCreate --project Microting.eFormDashboardBase --startup-project DBMigrator
         }
     }
 }
