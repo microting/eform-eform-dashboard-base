@@ -41,7 +41,7 @@ jobs:
     - name: Build
       run: dotnet build --configuration Release --no-restore
     - name: Unit Tests
-      run: dotnet test --no-restore -c Release -v n Microting.eFormDashboardBase.Tests/Microting.eFormDashboardBase.Tests.csproj
+      run: dotnet test --no-restore -c Release -v n Microting.eFormDashboardBase.Unit.Tests/Microting.eFormDashboardBase.Unit.Tests.csproj
     - name: Notify slack fail
       if: ${{ failure() }}
       env:
