@@ -1,5 +1,13 @@
 # Changelog
 
+## [v2.0.55](https://github.com/microting/eform-eform-dashboard-base/tree/v2.0.55) (2021-04-06)
+
+[Full Changelog](https://github.com/microting/eform-eform-dashboard-base/compare/v2.0.54...v2.0.55)
+
+**Implemented enhancements:**
+
+- Bump Microting.eForm from 4.4.19 to 4.4.20 [\#55](https://github.com/microting/eform-eform-dashboard-base/issues/55)
+
 ## [v2.0.54](https://github.com/microting/eform-eform-dashboard-base/tree/v2.0.54) (2021-04-05)
 
 [Full Changelog](https://github.com/microting/eform-eform-dashboard-base/compare/v2.0.53...v2.0.54)
