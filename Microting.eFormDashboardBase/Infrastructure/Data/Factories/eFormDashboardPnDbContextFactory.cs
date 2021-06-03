@@ -37,7 +37,6 @@ namespace Microting.eFormDashboardBase.Infrastructure.Data.Factories
             {
                 builder.EnableRetryOnFailure();
             });
-            optionsBuilder.UseLazyLoadingProxies(true);
 
             return new eFormDashboardPnDbContext(optionsBuilder.Options);
             //dotnet ef migrations add InitialCreate --project Microting.eFormDashboardBase --startup-project DBMigrator
