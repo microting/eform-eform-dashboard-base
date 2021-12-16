@@ -1,5 +1,34 @@
 # Changelog
 
+## [v3.0.74](https://github.com/microting/eform-eform-dashboard-base/tree/v3.0.74) (2021-12-16)
+
+[Full Changelog](https://github.com/microting/eform-eform-dashboard-base/compare/v3.0.73...v3.0.74)
+
+**Implemented enhancements:**
+
+- Bump Microting.eFormApi.BasePn from 3.1.10 to 3.1.11 [\#234](https://github.com/microting/eform-eform-dashboard-base/issues/234)
+- Bump Microting.eForm from 5.3.15 to 5.3.16 [\#233](https://github.com/microting/eform-eform-dashboard-base/issues/233)
+
+## [v3.0.73](https://github.com/microting/eform-eform-dashboard-base/tree/v3.0.73) (2021-12-16)
+
+[Full Changelog](https://github.com/microting/eform-eform-dashboard-base/compare/v3.0.72...v3.0.73)
+
+**Implemented enhancements:**
+
+- Bump Microting.eFormApi.BasePn from 3.1.9 to 3.1.10 [\#232](https://github.com/microting/eform-eform-dashboard-base/issues/232)
+
+## [v3.0.72](https://github.com/microting/eform-eform-dashboard-base/tree/v3.0.72) (2021-12-15)
+
+[Full Changelog](https://github.com/microting/eform-eform-dashboard-base/compare/v3.0.71...v3.0.72)
+
+## [v3.0.71](https://github.com/microting/eform-eform-dashboard-base/tree/v3.0.71) (2021-12-14)
+
+[Full Changelog](https://github.com/microting/eform-eform-dashboard-base/compare/v3.0.70...v3.0.71)
+
+## [v3.0.70](https://github.com/microting/eform-eform-dashboard-base/tree/v3.0.70) (2021-12-06)
+
+[Full Changelog](https://github.com/microting/eform-eform-dashboard-base/compare/v3.0.69...v3.0.70)
+
 ## [v3.0.69](https://github.com/microting/eform-eform-dashboard-base/tree/v3.0.69) (2021-11-24)
 
 [Full Changelog](https://github.com/microting/eform-eform-dashboard-base/compare/v3.0.68...v3.0.69)
@@ -218,10 +247,6 @@
 
 [Full Changelog](https://github.com/microting/eform-eform-dashboard-base/compare/v3.0.40...v3.0.41)
 
-**Implemented enhancements:**
-
-- Bump Microting.eFormApi.BasePn from 3.0.43 to 3.0.44 [\#189](https://github.com/microting/eform-eform-dashboard-base/issues/189)
-
 ## [v3.0.40](https://github.com/microting/eform-eform-dashboard-base/tree/v3.0.40) (2021-08-17)
 
 [Full Changelog](https://github.com/microting/eform-eform-dashboard-base/compare/v3.0.39...v3.0.40)
@@ -239,6 +264,7 @@
 
 - Bump Microting.eFormApi.BasePn from 3.0.41 to 3.0.42 [\#185](https://github.com/microting/eform-eform-dashboard-base/issues/185)
 - Bump Microting.eForm from 5.2.31 to 5.2.32 [\#184](https://github.com/microting/eform-eform-dashboard-base/issues/184)
+- Bump Microting.eForm from 5.2.30 to 5.2.31 [\#182](https://github.com/microting/eform-eform-dashboard-base/issues/182)
 
 ## [v3.0.38](https://github.com/microting/eform-eform-dashboard-base/tree/v3.0.38) (2021-08-11)
 
@@ -246,8 +272,8 @@
 
 **Implemented enhancements:**
 
+- Bump Microting.eFormApi.BasePn from 3.0.43 to 3.0.44 [\#189](https://github.com/microting/eform-eform-dashboard-base/issues/189)
 - Bump Microting.eFormApi.BasePn from 3.0.40 to 3.0.41 [\#183](https://github.com/microting/eform-eform-dashboard-base/issues/183)
-- Bump Microting.eForm from 5.2.30 to 5.2.31 [\#182](https://github.com/microting/eform-eform-dashboard-base/issues/182)
 
 **Merged pull requests:**
 
@@ -278,6 +304,7 @@
 **Implemented enhancements:**
 
 - Bump Microting.eFormApi.BasePn from 3.0.35 to 3.0.37 [\#176](https://github.com/microting/eform-eform-dashboard-base/issues/176)
+- Bump Microting.eForm from 5.2.23 to 5.2.26 [\#175](https://github.com/microting/eform-eform-dashboard-base/issues/175)
 
 ## [v3.0.34](https://github.com/microting/eform-eform-dashboard-base/tree/v3.0.34) (2021-08-05)
 
@@ -312,7 +339,6 @@
 
 **Implemented enhancements:**
 
-- Bump Microting.eForm from 5.2.23 to 5.2.26 [\#175](https://github.com/microting/eform-eform-dashboard-base/issues/175)
 - Bump Microting.eFormApi.BasePn from 3.0.30 to 3.0.31 [\#165](https://github.com/microting/eform-eform-dashboard-base/issues/165)
 - Bump Microting.eForm from 5.2.17 to 5.2.18 [\#164](https://github.com/microting/eform-eform-dashboard-base/issues/164)
 
@@ -352,6 +378,7 @@
 **Merged pull requests:**
 
 - Bump Pomelo.EntityFrameworkCore.MySql from 5.0.0 to 5.0.1 [\#153](https://github.com/microting/eform-eform-dashboard-base/pull/153) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump NUnit3TestAdapter from 3.17.0 to 4.0.0 [\#141](https://github.com/microting/eform-eform-dashboard-base/pull/141) ([dependabot[bot]](https://github.com/apps/dependabot))
 
 ## [v3.0.26](https://github.com/microting/eform-eform-dashboard-base/tree/v3.0.26) (2021-07-05)
 
@@ -359,7 +386,6 @@
 
 **Implemented enhancements:**
 
-- Bump Microting.eForm from 5.2.14 to 5.2.15 [\#157](https://github.com/microting/eform-eform-dashboard-base/issues/157)
 - Bump Microting.eFormApi.BasePn from 3.0.25 to 3.0.26 [\#155](https://github.com/microting/eform-eform-dashboard-base/issues/155)
 
 ## [v3.0.25](https://github.com/microting/eform-eform-dashboard-base/tree/v3.0.25) (2021-06-27)
@@ -368,6 +394,7 @@
 
 **Implemented enhancements:**
 
+- Bump Microting.eForm from 5.2.14 to 5.2.15 [\#157](https://github.com/microting/eform-eform-dashboard-base/issues/157)
 - Bump Microting.eFormApi.BasePn from 3.0.24 to 3.0.25 [\#152](https://github.com/microting/eform-eform-dashboard-base/issues/152)
 
 ## [v3.0.24](https://github.com/microting/eform-eform-dashboard-base/tree/v3.0.24) (2021-06-26)
@@ -378,6 +405,7 @@
 
 - Bump Microting.eFormApi.BasePn from 3.0.23 to 3.0.24 [\#151](https://github.com/microting/eform-eform-dashboard-base/issues/151)
 - Bump Microting.eForm from 5.2.12 to 5.2.13 [\#150](https://github.com/microting/eform-eform-dashboard-base/issues/150)
+- Bump Microting.eFormApi.BasePn from 3.0.21 to 3.0.22 [\#147](https://github.com/microting/eform-eform-dashboard-base/issues/147)
 
 ## [v3.0.23](https://github.com/microting/eform-eform-dashboard-base/tree/v3.0.23) (2021-06-24)
 
@@ -385,16 +413,11 @@
 
 **Implemented enhancements:**
 
-- Bump Microting.eFormApi.BasePn from 3.0.22 to 3.0.23 [\#149](https://github.com/microting/eform-eform-dashboard-base/issues/149)
 - Bump Microting.eForm from 5.2.11 to 5.2.12 [\#148](https://github.com/microting/eform-eform-dashboard-base/issues/148)
 
 ## [v3.0.22](https://github.com/microting/eform-eform-dashboard-base/tree/v3.0.22) (2021-06-16)
 
 [Full Changelog](https://github.com/microting/eform-eform-dashboard-base/compare/v3.0.21...v3.0.22)
-
-**Implemented enhancements:**
-
-- Bump Microting.eFormApi.BasePn from 3.0.21 to 3.0.22 [\#147](https://github.com/microting/eform-eform-dashboard-base/issues/147)
 
 ## [v3.0.21](https://github.com/microting/eform-eform-dashboard-base/tree/v3.0.21) (2021-06-11)
 
@@ -421,7 +444,6 @@
 **Implemented enhancements:**
 
 - Bump Microting.eFormApi.BasePn from 3.0.18 to 3.0.19 [\#138](https://github.com/microting/eform-eform-dashboard-base/issues/138)
-- Bump Microting.eForm from 5.2.7 to 5.2.8 [\#135](https://github.com/microting/eform-eform-dashboard-base/issues/135)
 
 ## [v3.0.18](https://github.com/microting/eform-eform-dashboard-base/tree/v3.0.18) (2021-06-04)
 
@@ -429,6 +451,7 @@
 
 **Implemented enhancements:**
 
+- Bump Microting.eFormApi.BasePn from 3.0.22 to 3.0.23 [\#149](https://github.com/microting/eform-eform-dashboard-base/issues/149)
 - Bump Microting.eFormApi.BasePn from 3.0.17 to 3.0.18 [\#137](https://github.com/microting/eform-eform-dashboard-base/issues/137)
 
 ## [v3.0.17](https://github.com/microting/eform-eform-dashboard-base/tree/v3.0.17) (2021-06-03)
@@ -442,6 +465,7 @@
 **Implemented enhancements:**
 
 - Bump Microting.eFormApi.BasePn from 3.0.16 to 3.0.17 [\#136](https://github.com/microting/eform-eform-dashboard-base/issues/136)
+- Bump Microting.eForm from 5.2.7 to 5.2.8 [\#135](https://github.com/microting/eform-eform-dashboard-base/issues/135)
 
 ## [v3.0.15](https://github.com/microting/eform-eform-dashboard-base/tree/v3.0.15) (2021-06-01)
 
@@ -472,6 +496,10 @@
 
 [Full Changelog](https://github.com/microting/eform-eform-dashboard-base/compare/v3.0.11...v3.0.12)
 
+**Implemented enhancements:**
+
+- Bump Microting.eForm from 5.2.3 to 5.2.4 [\#128](https://github.com/microting/eform-eform-dashboard-base/issues/128)
+
 ## [v3.0.11](https://github.com/microting/eform-eform-dashboard-base/tree/v3.0.11) (2021-05-26)
 
 [Full Changelog](https://github.com/microting/eform-eform-dashboard-base/compare/v3.0.10...v3.0.11)
@@ -483,7 +511,6 @@
 
 **Merged pull requests:**
 
-- Bump NUnit3TestAdapter from 3.17.0 to 4.0.0 [\#141](https://github.com/microting/eform-eform-dashboard-base/pull/141) ([dependabot[bot]](https://github.com/apps/dependabot))
 - Bump Microsoft.EntityFrameworkCore.SqlServer from 5.0.5 to 5.0.6 [\#117](https://github.com/microting/eform-eform-dashboard-base/pull/117) ([dependabot-preview[bot]](https://github.com/apps/dependabot-preview))
 - Bump Microsoft.EntityFrameworkCore.Design from 5.0.5 to 5.0.6 [\#116](https://github.com/microting/eform-eform-dashboard-base/pull/116) ([dependabot-preview[bot]](https://github.com/apps/dependabot-preview))
 - Upgrade to GitHub-native Dependabot [\#92](https://github.com/microting/eform-eform-dashboard-base/pull/92) ([dependabot-preview[bot]](https://github.com/apps/dependabot-preview))
@@ -505,7 +532,6 @@
 
 **Implemented enhancements:**
 
-- Bump Microting.eForm from 5.2.3 to 5.2.4 [\#128](https://github.com/microting/eform-eform-dashboard-base/issues/128)
 - Bump Microting.eFormApi.BasePn from 3.0.9 to 3.0.10 [\#119](https://github.com/microting/eform-eform-dashboard-base/issues/119)
 - Bump Microting.eForm from 5.1.5 to 5.2.0 [\#118](https://github.com/microting/eform-eform-dashboard-base/issues/118)
 
@@ -515,6 +541,7 @@
 
 **Implemented enhancements:**
 
+- Bump Microting.eFormApi.BasePn from 3.0.8 to 3.0.9 [\#115](https://github.com/microting/eform-eform-dashboard-base/issues/115)
 - Bump Microting.eForm from 5.1.4 to 5.1.5 [\#114](https://github.com/microting/eform-eform-dashboard-base/issues/114)
 
 ## [v3.0.7](https://github.com/microting/eform-eform-dashboard-base/tree/v3.0.7) (2021-05-07)
@@ -542,6 +569,7 @@
 **Implemented enhancements:**
 
 - Bump Microting.eFormApi.BasePn from 3.0.5 to 3.0.6 [\#107](https://github.com/microting/eform-eform-dashboard-base/issues/107)
+- Bump Microting.eForm from 5.1.1 to 5.1.2 [\#106](https://github.com/microting/eform-eform-dashboard-base/issues/106)
 
 ## [v3.0.4](https://github.com/microting/eform-eform-dashboard-base/tree/v3.0.4) (2021-05-04)
 
@@ -549,8 +577,6 @@
 
 **Implemented enhancements:**
 
-- Bump Microting.eFormApi.BasePn from 3.0.8 to 3.0.9 [\#115](https://github.com/microting/eform-eform-dashboard-base/issues/115)
-- Bump Microting.eForm from 5.1.1 to 5.1.2 [\#106](https://github.com/microting/eform-eform-dashboard-base/issues/106)
 - Bump Microting.eFormApi.BasePn from 3.0.4 to 3.0.5 [\#105](https://github.com/microting/eform-eform-dashboard-base/issues/105)
 - Bump Microting.eForm from 5.1.0 to 5.1.1 [\#104](https://github.com/microting/eform-eform-dashboard-base/issues/104)
 
@@ -560,6 +586,7 @@
 
 **Implemented enhancements:**
 
+- Bump Microting.eFormApi.BasePn from 3.0.3 to 3.0.4 [\#103](https://github.com/microting/eform-eform-dashboard-base/issues/103)
 - Bump Microting.eForm from 5.0.4 to 5.1.0 [\#102](https://github.com/microting/eform-eform-dashboard-base/issues/102)
 
 ## [v3.0.2](https://github.com/microting/eform-eform-dashboard-base/tree/v3.0.2) (2021-05-03)
@@ -568,9 +595,7 @@
 
 **Implemented enhancements:**
 
-- Bump Microting.eFormApi.BasePn from 3.0.1 to 3.0.3 [\#99](https://github.com/microting/eform-eform-dashboard-base/issues/99)
 - Bump Microting.eForm from 5.0.2 to 5.0.4 [\#98](https://github.com/microting/eform-eform-dashboard-base/issues/98)
-- Bump Microting.eFormApi.BasePn from 2.1.0 to 2.1.1 [\#85](https://github.com/microting/eform-eform-dashboard-base/issues/85)
 
 ## [v3.0.1](https://github.com/microting/eform-eform-dashboard-base/tree/v3.0.1) (2021-05-02)
 
@@ -590,6 +615,7 @@
 
 **Implemented enhancements:**
 
+- Bump Microting.eFormApi.BasePn from 3.0.1 to 3.0.3 [\#99](https://github.com/microting/eform-eform-dashboard-base/issues/99)
 - Bump Microting.eFormApi.BasePn from 2.1.3 to 3.0.0 [\#96](https://github.com/microting/eform-eform-dashboard-base/issues/96)
 - Bump Microting.eForm from 4.5.3 to 5.0.2 [\#95](https://github.com/microting/eform-eform-dashboard-base/issues/95)
 
@@ -599,7 +625,6 @@
 
 **Implemented enhancements:**
 
-- Bump Microting.eFormApi.BasePn from 3.0.3 to 3.0.4 [\#103](https://github.com/microting/eform-eform-dashboard-base/issues/103)
 - Bump Microting.eFormApi.BasePn from 2.1.1 to 2.1.3 [\#87](https://github.com/microting/eform-eform-dashboard-base/issues/87)
 - Bump Microting.eForm from 4.5.1 to 4.5.3 [\#86](https://github.com/microting/eform-eform-dashboard-base/issues/86)
 
@@ -609,6 +634,7 @@
 
 **Implemented enhancements:**
 
+- Bump Microting.eFormApi.BasePn from 2.1.0 to 2.1.1 [\#85](https://github.com/microting/eform-eform-dashboard-base/issues/85)
 - Bump Microting.eForm from 4.5.0 to 4.5.1 [\#84](https://github.com/microting/eform-eform-dashboard-base/issues/84)
 
 ## [v2.1.0](https://github.com/microting/eform-eform-dashboard-base/tree/v2.1.0) (2021-04-21)
@@ -623,7 +649,6 @@
 
 - Bump Microting.eFormApi.BasePn from 2.0.129 to 2.1.0 [\#83](https://github.com/microting/eform-eform-dashboard-base/issues/83)
 - Bump Microting.eForm from 4.4.38 to 4.5.0 [\#82](https://github.com/microting/eform-eform-dashboard-base/issues/82)
-- Bump Microting.eFormApi.BasePn from 2.0.126 to 2.0.127 [\#77](https://github.com/microting/eform-eform-dashboard-base/issues/77)
 
 ## [v2.0.66](https://github.com/microting/eform-eform-dashboard-base/tree/v2.0.66) (2021-04-20)
 
@@ -649,6 +674,7 @@
 
 **Implemented enhancements:**
 
+- Bump Microting.eFormApi.BasePn from 2.0.126 to 2.0.127 [\#77](https://github.com/microting/eform-eform-dashboard-base/issues/77)
 - Bump Microting.eForm from 4.4.35 to 4.4.36 [\#76](https://github.com/microting/eform-eform-dashboard-base/issues/76)
 
 ## [v2.0.63](https://github.com/microting/eform-eform-dashboard-base/tree/v2.0.63) (2021-04-15)
@@ -667,7 +693,7 @@
 **Implemented enhancements:**
 
 - Bump Microting.eFormApi.BasePn from 2.0.120 to 2.0.122 [\#73](https://github.com/microting/eform-eform-dashboard-base/issues/73)
-- Bump Microting.eForm from 4.4.26 to 4.4.27 [\#68](https://github.com/microting/eform-eform-dashboard-base/issues/68)
+- Bump Microting.eForm from 4.4.29 to 4.4.31 [\#72](https://github.com/microting/eform-eform-dashboard-base/issues/72)
 
 ## [v2.0.61](https://github.com/microting/eform-eform-dashboard-base/tree/v2.0.61) (2021-04-13)
 
@@ -685,6 +711,7 @@
 **Implemented enhancements:**
 
 - Bump Microting.eFormApi.BasePn from 2.0.117 to 2.0.118 [\#69](https://github.com/microting/eform-eform-dashboard-base/issues/69)
+- Bump Microting.eForm from 4.4.26 to 4.4.27 [\#68](https://github.com/microting/eform-eform-dashboard-base/issues/68)
 
 ## [v2.0.59](https://github.com/microting/eform-eform-dashboard-base/tree/v2.0.59) (2021-04-11)
 
@@ -701,7 +728,6 @@
 
 **Implemented enhancements:**
 
-- Bump Microting.eForm from 4.4.29 to 4.4.31 [\#72](https://github.com/microting/eform-eform-dashboard-base/issues/72)
 - Bump Microting.eFormApi.BasePn from 2.0.115 to 2.0.116 [\#65](https://github.com/microting/eform-eform-dashboard-base/issues/65)
 - Bump Microting.eForm from 4.4.23 to 4.4.24 [\#64](https://github.com/microting/eform-eform-dashboard-base/issues/64)
 
@@ -722,7 +748,6 @@
 
 - Bump Microting.eFormApi.BasePn from 2.0.111 to 2.0.113 [\#60](https://github.com/microting/eform-eform-dashboard-base/issues/60)
 - Bump Microting.eForm from 4.4.20 to 4.4.21 [\#59](https://github.com/microting/eform-eform-dashboard-base/issues/59)
-- Bump Microting.eFormApi.BasePn from 2.0.109 to 2.0.110 [\#52](https://github.com/microting/eform-eform-dashboard-base/issues/52)
 
 ## [v2.0.55](https://github.com/microting/eform-eform-dashboard-base/tree/v2.0.55) (2021-04-06)
 
@@ -739,7 +764,6 @@
 **Implemented enhancements:**
 
 - Bump Microting.eFormApi.BasePn from 2.0.110 to 2.0.111 [\#54](https://github.com/microting/eform-eform-dashboard-base/issues/54)
-- Bump Microting.eForm from 4.4.17 to 4.4.19 [\#53](https://github.com/microting/eform-eform-dashboard-base/issues/53)
 
 ## [v2.0.53](https://github.com/microting/eform-eform-dashboard-base/tree/v2.0.53) (2021-04-04)
 
@@ -747,6 +771,8 @@
 
 **Implemented enhancements:**
 
+- Bump Microting.eForm from 4.4.17 to 4.4.19 [\#53](https://github.com/microting/eform-eform-dashboard-base/issues/53)
+- Bump Microting.eFormApi.BasePn from 2.0.109 to 2.0.110 [\#52](https://github.com/microting/eform-eform-dashboard-base/issues/52)
 - Bump Microting.eForm from 4.4.16 to 4.4.17 [\#51](https://github.com/microting/eform-eform-dashboard-base/issues/51)
 
 ## [v2.0.52](https://github.com/microting/eform-eform-dashboard-base/tree/v2.0.52) (2021-04-02)
@@ -791,7 +817,6 @@
 
 **Implemented enhancements:**
 
-- Bump Microting.eFormApi.BasePn from 2.0.101 to 2.0.103 [\#37](https://github.com/microting/eform-eform-dashboard-base/issues/37)
 - Bump Microting.eForm from 4.4.6 to 4.4.8 [\#36](https://github.com/microting/eform-eform-dashboard-base/issues/36)
 
 ## [v2.0.47](https://github.com/microting/eform-eform-dashboard-base/tree/v2.0.47) (2021-03-11)
@@ -809,6 +834,7 @@
 
 **Implemented enhancements:**
 
+- Bump Microting.eFormApi.BasePn from 2.0.101 to 2.0.103 [\#37](https://github.com/microting/eform-eform-dashboard-base/issues/37)
 - Bump Microting.eFormApi.BasePn from 2.0.98 to 2.0.99 [\#24](https://github.com/microting/eform-eform-dashboard-base/issues/24)
 - Bump Microting.eForm from 4.4.2 to 4.4.3 [\#23](https://github.com/microting/eform-eform-dashboard-base/issues/23)
 
